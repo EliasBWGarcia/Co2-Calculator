@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Co2 Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-container">
+  <h1>Personal CO2 Emission Calculator</h1>
+  <div class="instructions">
+    <p>Type the distance you drive each day and select your car model to calculate your CO2 emissions per month and year.</p>
+  </div>
+
+  <label for="distance">Distance driven each day (km):</label>
+  <input id="distance" type="text" placeholder="Enter distance in kilometers">
+  <div id = "error"></div>
+
+  <label for="car-select">Select your car:</label>
+  <select id="car-select">
+    <option value="75">Toyota Yaris (75 g/km)</option>
+    <option value="95">Peugeot 208 (95 g/km)</option>
+    <option value="110">Volkswagen Golf (110 g/km)</option>
+    <option value="115">Ford Fiesta (115 g/km)</option>
+    <option value="130">Nissan Qashqai (130 g/km)</option>
+    <option value="110">Skoda Octavia (110 g/km)</option>
+    <option value="44">BMW 3 Series (44 g/km, hybrid)</option>
+    <option value="135">Mercedes-Benz A-Class (135 g/km)</option>
+    <option value="0">Tesla Model 3 (0 g/km, electric)</option>
+    <option value="120">Audi A3 (120 g/km)</option>
+    <option value="104">Renault Clio (104 g/km)</option>
+    <option value="117">Hyundai i30 (117 g/km)</option>
+    <option value="108">Kia Ceed (108 g/km)</option>
+    <option value="123">Volvo XC40 (123 g/km)</option>
+    <option value="88">Fiat 500 (88 g/km)</option>
+    <option value="114">Mini Cooper (114 g/km)</option>
+    <option value="106">Opel Corsa (106 g/km)</option>
+    <option value="97">Citroën C3 (97 g/km)</option>
+    <option value="110">Seat Leon (110 g/km)</option>
+    <option value="99">Dacia Sandero (99 g/km)</option>
+    <option value="93">Suzuki Alto (93 g/km)</option>
+    <option value="114">Volkswagen Passat (114 g/km)</option>
+    <option value="97">Toyota Corolla (97 g/km)</option>
+    <option value="108">Renault Megane (108 g/km)</option>
+    <option value="121">Mazda 3 (121 g/km)</option>
+    <option value="98">Ford Focus (98 g/km)</option>
+    <option value="102">Opel Astra (102 g/km)</option>
+    <option value="129">Peugeot 3008 (129 g/km)</option>
+    <option value="123">Skoda Superb (123 g/km)</option>
+    <option value="88">Nissan Micra (88 g/km)</option>
+  </select>
+
+
+  <div class="btn-container">
+    <div class="btn">Calculate</div>
+  </div>
+
+  <div class="results">
+    <h3>CO2 Emissions:</h3>
+    <p>Monthly CO2 Emission: <span id="monthly-co2">0</span> kg</p>
+    <p>Yearly CO2 Emission: <span id="yearly-co2">0</span> kg</p>
+    <p id="fun-fact" style="color: #388e3c; font-weight: bold;"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
