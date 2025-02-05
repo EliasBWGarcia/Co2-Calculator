@@ -22,28 +22,28 @@ function getCo2Calculation() {
 
     if (distance > 100) {
         document.querySelector("#fun-fact").textContent =
-            "100 km? You must really hate the planet. Or just hate yourself.";
+            "test1";
     } else if (distance >= 50) {
         document.querySelector("#fun-fact").textContent =
-            "50 km a day? You’re basically a carbon-spewing machine at this point.";
+            "test2";
     } else if (distance >= 40) {
         document.querySelector("#fun-fact").textContent =
-            "40 km a day? Hope you're proud";
+            "test3";
     } else if (distance >= 30) {
         document.querySelector("#fun-fact").textContent =
-            "30 km? Keep driving, the ice caps aren’t melting fast enough.";
+             "test4";
     } else if (distance >= 20) {
         document.querySelector("#fun-fact").textContent =
-            "20 km a day? Bet you think recycling that bottle makes up for this, huh?";
+            "test5";
     } else if (distance >= 10) {
         document.querySelector("#fun-fact").textContent =
-            "10 km? Walking exists, you know. But sure, kill the planet instead.";
+            "test6";
     } else if (distance >= 5) {
         document.querySelector("#fun-fact").textContent =
-            "Really? It’s like you’re allergic to exercise and common sense.";
+            "test7";
     } else {
         document.querySelector("#fun-fact").textContent =
-            "Get off your lazy ass and walk. You’re killing us all.";
+           "test8";
     }
 
     const dailyCo2 = distance * usersCarEmissionValuePrKM;
